@@ -1,0 +1,12 @@
+%div(id="" class="")
+	%h3 Start Location automatic GPS
+	%form(id="user_bounds" name="user_bounds" method="post" action="")
+		%label(for="no_of_days")Number of days : <span class="required">*</span>
+		%input(type="text" id="no_of_days" name="no_of_days" value="" required="required")
+		%label(for="start_time")Start Time : <span class="required">*</span>
+		%input(type="text" id="start_time" name="start_time" value="" required="required")
+		%label(for="end_time")End Time : <span class="required">*</span>
+		%input(type="text" id="end_time" name="end_time" value="" required="required")
+		%input(type="submit")
+
+%div(class="user_bound_errors")

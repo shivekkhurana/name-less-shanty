@@ -1,0 +1,6 @@
+%div
+  -selections.each do |k,v|
+    %ul
+      %li=db[k][v]["Name"]
+      %li=db[k][v]["Description"]
+      %li=db[k][v]["Location"]

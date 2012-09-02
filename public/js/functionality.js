@@ -13,6 +13,7 @@ $(function(){
 
   //prevent form submits
   $('form').submit(function(event){event.preventDefault();});
+
   //#user_bounds form validation
   $('form#user_bounds').submit(function(){
     var no_of_days = $('input#no_of_days');
@@ -37,13 +38,44 @@ $(function(){
       });
     }
     else{
-      alert("commit");
+      window.location = '/select';
     }
   });
-  
+
+  //check whether wish_list contains atleast one item and drop ['list','of','ids'] cookie
+  $('form#wish_list').submit(function(){
+    if(!$('input').is(':checked')){
+      $('div.wish_list_errors').text('').append("Please select atleast one site.");
+    }
+    else{
+      var wish_list_ids = [];
+      var wish_list = {};
+      $('input:checked').each(function(){
+          wish_list_ids.push( $(this).attr('id') );
+      });
+      $.each(wish_list_ids, function(index, id){
+        wish_list[id] = "a";
+      });
+      wish_list = JSON.stringify(wish_list);
+      $.cookie('wish_list', wish_list, {expires:7});
+      window.location = "/show";
+    }
+  });
+
+  //*//autocheck previously selected places
+  $.fn.populate_wish_list = function(){
+  	var wish_list_cookie = $.cookie('wish_list');
+    if(wish_list_cookie !== null){
+      wish_hash = $.parseJSON(wish_list_cookie);
+      $.each(wish_hash, function(k,v){
+        $('input#'+k).prop("checked", true);
+      });
+    }
+  }
+  $.fn.populate_wish_list();
+  //*/
+
   //Set the following forms working 
   //var forms = ['user_bounds', 'wish_list']
 	$('form#user_bounds').handleStorage({appID : 'user_bounds', storage:'cookies'});
-  $('form#wish_list').handleStorage({appID : 'wish_list', storage:'cookies'});
-  $('form#wish_list').submit(function(){return false;});
 });

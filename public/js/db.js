@@ -72,7 +72,7 @@
       "Description":"Famous for optics an shoes.",
       "Location":[28.655735,77.225416]
     		}
-  		}
+  },
   		
 	"f":{
 		"P_name":"Delhi Haat",

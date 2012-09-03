@@ -2,12 +2,12 @@
   "a":{
   	"P_name":"UNESCO World Heritage Sites",
     "a":{
-    	"Name":"Qutb Minar & Its Monuments",
+    	"Name":"Qutb Minar And Its Monuments",
       "Description":"The tallest minaret in India, Qutub Minar stands tall among the monuments bearing marks of Indo-Islamic architecture. The construction of 72.5 m tall minaret in red sandstone was initiated by Qutb-Ud-Din-Aibak (the first Muslim ruler of Delhi) in the year 1192. However, it was only under the rule of Shams-Ud-Din Iltutmish that the construction was finally completed. It is a prominent tourist attraction in the capital city, New Delhi",
       "Location":[28.524374,77.185451]
     		},
     "b":{
-    	"Name":"Humayun’s Tomb",
+    	"Name":"Humayun Tomb",
       "Description":"This tomb was built in 1570 AD by Humayun's wife Haji Begum. What is immensely overwhelming about the tomb, is its brilliant octagonal shape. Some of the interesting features of the massive tomb are the bath chamber, the sand stone mausoleum and a pavilion.",
       "Location":[28.593295,77.250731]
     		},

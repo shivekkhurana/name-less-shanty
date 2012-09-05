@@ -12,9 +12,23 @@
 /* -----------------------------------------
    Shared Styles
 ----------------------------------------- */
+div{
+	z-index: 1;
+	background:rgba(255,255,255,0.5);
+}
 
 
-
+body{background:transparent;}
+html, body
+{
+    height: 100%;
+}
+input[type="checkbox"]{
+	display:none;
+}
+#wish_list .button{
+	width:100%;
+}
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */

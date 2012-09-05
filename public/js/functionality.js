@@ -78,4 +78,18 @@ $(function(){
   //Set the following forms working 
   //var forms = ['user_bounds', 'wish_list']
 	$('form#user_bounds').handleStorage({appID : 'user_bounds', storage:'cookies'});
+	
+	//Change label color on wish_list
+  $.fn.change_wish_label_color = function(){
+    $.each($('input:checked'),function(index, e){
+      $(e).prev('label').toggleClass('secondary').toggleClass('success');
+    });
+  }
+    //Call label change for initially saved wish_list cookie
+  $.fn.change_wish_label_color();
+    //call label change when a label is clicked
+  $('form#wish_list label').click(function(){
+    $( this ).toggleClass('secondary').toggleClass('success');
+  });
 });
+

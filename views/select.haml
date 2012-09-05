@@ -1,11 +1,12 @@
-%h3 Wish List
-%form(method='POST' action='' id='wish_list')
-  %div
-  -site_list.each do |site_id, sites_group|
-    %div
-      %label(for="#{site_id}")
-        %h4= sites_group['P_name']
-      %input(type="checkbox" name="#{site_id}" id="#{site_id}" value="#{site_id}")
-  %div
-    %input(type="submit" value="save")
-%div(class='error wish_list_errors')
+%div(class="row")
+	%div(id="" class="twelve columns")
+		%h3 Wish List
+		%form(method='POST' action='' id='wish_list')
+			-site_list.each do |site_id, sites_group|
+				%div(class="six columns")
+					%label(for="#{site_id}" class="secondary button")
+						%h4= sites_group['P_name']
+					%input(type="checkbox" name="#{site_id}" id="#{site_id}" value="#{site_id}")
+			%div(class="twelve columns")
+				%input(type="submit" value="Save" class="button")
+		%div(class='error wish_list_errors')

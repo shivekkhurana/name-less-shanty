@@ -1,12 +1,15 @@
 %div(class="row")
-	%div(id="" class="twelve columns")
-		-selections.each do |k,v|
-			-current = db[k][v]
-			-m_id = current["Name"].gsub(" ", "_")
-			%ul
-				%li
-					%a(id="#{v}" href="#" class="site_marked" data-reveal-id="#{m_id}")=current["Location"]
-				%li(id="#{m_id}" class="reveal-modal")
-					%h3=current["Name"]
-					=current["Description"]
-					%a(href="#" class="close-reveal-modal")x
+	-sites = []
+	-selections.each do |k,v|
+		-current = db[k][v]
+		-m_id = current["Name"].gsub(" ", "_")
+		-sites << [m_id] + current["Location"]
+		%ul
+			/%li
+			/%a(id="#{v}" href="#" class="site_marked" data-reveal-id="#{m_id}")=current["Name"]
+			%li(id="#{m_id}" class="reveal-modal")
+				%h3=current["Name"]
+				=current["Description"]
+				%a(href="#" class="close-reveal-modal")x
+:javascript
+	$(function(){$.fn.initialize_map(#{sites})});

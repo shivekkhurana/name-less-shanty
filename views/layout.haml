@@ -28,7 +28,7 @@
 		/css
 		%link(rel="stylesheet" type="text/css" href="./css/foundation.min.css")
 		%link(rel="stylesheet" type="text/css" href="./css/app.css")
-	%body(onload="initialize()")
+	%body()
 		= yield
 		/maps 
 		%div(id="map_canvas" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 0;")

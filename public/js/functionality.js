@@ -147,6 +147,7 @@ $(function(){
 		}
 	}
 	
+	/*//
 	//draw arrows
 	function drawArrow(pt1, pt2, color)
 	{
@@ -188,7 +189,7 @@ $(function(){
 		addHead(pt2, theta, zoom, color);
 		map.addOverlay(polyline);
 	}
-	
+	//*/	
 	
 	//init map
 	$.fn.initialize_map = function(sites) {

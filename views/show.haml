@@ -9,6 +9,7 @@
 			/%a(id="#{v}" href="#" class="site_marked" data-reveal-id="#{m_id}")=current["Name"]
 			%li(id="#{m_id}" class="reveal-modal")
 				%h3=current["Name"]
+				%a(href="#" class="decline_site alert button small round" rel="#{k}_#{v}")Decline<br/>
 				=current["Description"]
 				%a(href="#" class="close-reveal-modal")x
 :javascript

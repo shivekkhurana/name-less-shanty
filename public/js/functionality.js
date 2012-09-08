@@ -95,6 +95,18 @@ $(function(){
     $( this ).toggleClass('secondary').toggleClass('success');
   });
 
+	//decline site
+	$('a.decline_site').click(function(){
+		//load site next in group or first one if ~next == TRUE
+		var k_v = $(this).attr('rel');
+		$.getJSON('./get_next/'+k_v, function(r){
+			wish_hash = $.parseJSON($.cookie('wish_list'));
+			wish_hash[k_v[0]] = r;
+			$.cookie('wish_list', JSON.stringify(wish_hash),{expires:7});
+			window.location = '/show';			
+		});
+		 
+	});
 	/*///////////////#/\/\aps#///////*/
 	$.fn.set_markers = function (map, locations) {
 		// Add markers to the map
@@ -107,12 +119,11 @@ $(function(){
 		// increase in the X direction to the right and in
 		// the Y direction down.
 		var image = new google.maps.MarkerImage('./images/circle_orange.png',
-		// This marker is 20 pixels wide by 32 pixels tall.
+		// This marker is 48 pixels wide by 48 pixels tall.
 		new google.maps.Size(48, 48),
 		// The origin for this image is 0,0.
-		new google.maps.Point(0, 0),
-		// The anchor for this image is the base of the flagpole at 0,32.
-		new google.maps.Point(0, 32));
+		new google.maps.Point(0, 0)
+		);
 		/*var shadow = new google.maps.MarkerImage('images/beachflag_shadow.png',
 		// The shadow image is larger in the horizontal dimension
 		// while the position and offset are the same as for the main image.
@@ -124,10 +135,10 @@ $(function(){
 		// traces out a polygon as a series of X,Y points. The final
 		// coordinate closes the poly by connecting to the first
 		// coordinate.
-		var shape = {
-			coord: [1, 1, 1, 20, 18, 20, 18, 1],
-			type: 'poly'
-		};
+		//var shape = {
+		//	coord: [1, 1, 1, 20, 18, 20, 18, 1],
+		//	type: 'poly'
+		//};
 		for (var i = 0; i < locations.length; i++) {
 			var site = locations[i];
 			var myLatLng = new google.maps.LatLng(site[1], site[2]);

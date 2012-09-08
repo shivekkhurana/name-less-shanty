@@ -1,7 +1,7 @@
 %div(class="row")
 	-sites = []
 	-selections.each do |k,v|
-		-current = db[k][v]
+		-current = db[k][v] 
 		-m_id = current["Name"].gsub(" ", "_")
 		-sites << [m_id] + current["Location"]
 		%ul
@@ -13,4 +13,6 @@
 				=current["Description"]
 				%a(href="#" class="close-reveal-modal")x
 :javascript
-	$(function(){$.fn.initialize_map(#{sites})});
+	$(function(){
+		$.fn.initialize_map(#{sites});
+	});

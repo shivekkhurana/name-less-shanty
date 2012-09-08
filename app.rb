@@ -14,6 +14,15 @@ get '/select' do
 end
 
 get '/show' do
+	bounds = {}
+	db.each do|site_id, site_group|
+		temp = []
+		site_group.each do|id, info|
+			temp << id;
+		end
+		bounds[site_id] = temp
+	end
+	response.set_cookie('site_bounds', bounds.to_json.to_s)
   haml :show, :locals => {:selections => JSON.parse(cookies[:wish_list]), :db=> db}
 end
 

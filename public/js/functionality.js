@@ -13,6 +13,20 @@ $(function(){
     return regex.test(t);
   }
 
+	$.fn.Asc = function(String)
+	{
+		return String.charCodeAt(0);
+	}
+
+	$.fn.Chr = function(AsciiNum)
+	{
+		return String.fromCharCode(AsciiNum)
+	}
+	
+	$.fn.get_next = function(c){
+		return $.fn.Chr( $.fn.Asc(c) + 1 );
+	} 
+	
   //prevent form submits
   $('form').submit(function(event){event.preventDefault();});
 
@@ -99,12 +113,21 @@ $(function(){
 	$('a.decline_site').click(function(){
 		//load site next in group or first one if ~next == TRUE
 		var k_v = $(this).attr('rel');
-		$.getJSON('./get_next/'+k_v, function(r){
-			wish_hash = $.parseJSON($.cookie('wish_list'));
-			wish_hash[k_v[0]] = r;
-			$.cookie('wish_list', JSON.stringify(wish_hash),{expires:7});
-			window.location = '/show';			
+		var key = k_v[0];
+		wish_hash = $.parseJSON($.cookie('wish_list'));
+		site_bounds = $.parseJSON($.cookie('site_bounds'));
+		site_bounds = site_bounds[key];
+		r = $.fn.get_next(k_v[2]);
+		
+		wish_hash[key] = "a";
+		$.each(site_bounds, function(i){
+			if(site_bounds[i] == r){
+				wish_hash[key] = r;
+			}
 		});
+		
+		$.cookie('wish_list', JSON.stringify(wish_hash),{expires:7});
+		window.location = '/show';			
 		 
 	});
 	/*///////////////#/\/\aps#///////*/

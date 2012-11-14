@@ -51,7 +51,9 @@ input[type="submit"]{
 	background:none;
 	
 }
-
+#order_of_visiting a{
+	color:#fff;
+}
 /* -----------------------------------------
    Page Name 1
 ----------------------------------------- */

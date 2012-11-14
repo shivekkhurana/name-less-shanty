@@ -42,7 +42,7 @@ def apt_cycle(start, graph)
 	cycle = nil
 	d = 1.0/0
 	all_nodes.each do |perm|
-		if perm[0] == start
+		if True
 			d_temp = 0
 			perm.each_cons(2) do |node, next_node|
 				l = node.length

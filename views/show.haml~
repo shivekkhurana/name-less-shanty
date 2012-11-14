@@ -18,8 +18,7 @@
 				%h3=current["Name"]
 				=current["Description"]
 				%a(href="#" class="close-reveal-modal")x
-				%p
-					%a(href="#" class="decline_site alert button small round" rel="#{k}_#{v}")Decline<br/>
+				%a(href="#" class="decline_site alert button small round" rel="#{k}_#{v}")Decline<br/>
 :javascript
 	$(function(){
 		$.fn.initialize_map(#{sites});

@@ -3,19 +3,26 @@
   	"P_name":"UNESCO World Heritage Sites",
     "a":{
     	"Name":"Qutb Minar And Its Monuments",
-      "Description":"The tallest minaret in India, Qutub Minar stands tall among the monuments bearing marks of Indo-Islamic architecture. The construction of 72.5 m tall minaret in red sandstone was initiated by Qutb-Ud-Din-Aibak (the first Muslim ruler of Delhi) in the year 1192. However, it was only under the rule of Shams-Ud-Din Iltutmish that the construction was finally completed. It is a prominent tourist attraction in the capital city, New Delhi",
+      "Description":"<img src='http://1.bp.blogspot.com/-KizUcTwTE0c/ThbVv-o0yKI/AAAAAAAAAIw/g2hrW1x6ivY/s1600/Qutub-Minar-Delhi-Gohoto.jpg'><br/>The tallest minaret in India, Qutub Minar stands tall among the monuments bearing marks of Indo-Islamic architecture. The construction of 72.5 m tall minaret in red sandstone was initiated by Qutb-Ud-Din-Aibak (the first Muslim ruler of Delhi) in the year 1192. However, it was only under the rule of Shams-Ud-Din Iltutmish that the construction was finally completed. It is a prominent tourist attraction in the capital city, New Delhi",
       "Location":[28.524374,77.185451]
     		},
     "b":{
     	"Name":"Humayun Tomb",
-      "Description":"This tomb was built in 1570 AD by Humayun's wife Haji Begum. What is immensely overwhelming about the tomb, is its brilliant octagonal shape. Some of the interesting features of the massive tomb are the bath chamber, the sand stone mausoleum and a pavilion.",
+      "Description":"<img src='http://www.ejiusa.com/india_city_details/Humayuns'tomb.jpg'><br/>This tomb was built in 1570 AD by Humayun's wife Haji Begum. What is immensely overwhelming about the tomb, is its brilliant octagonal shape. Some of the interesting features of the massive tomb are the bath chamber, the sand stone mausoleum and a pavilion.",
       "Location":[28.593295,77.250731]
     		},
     "c":{
     	"Name":"Red Fort Complex",
       "Description":"This is regarded as one of the most impressive Delhi World Heritage Sites and was built by Shah Jahan, the famous Mughal ruler between 1638 and 1648. Several Indians refer to it as the Lal Quila. There are several attractions within the Red Fort such as the Diwan-i-Khas and the Diwan-i-Am. The Rang Mahal houses the famous lotus-shaped fountain and the fort is also popular for its gardens, mosque and various halls.",
       "Location":[28.655858,77.241928]
-    		}
+    		},
+    "d":{
+      "Name":"Ashokan Rock Edict",
+      "Description":"<img src='http://goodearthguides.files.wordpress.com/2010/07/edict2.jpg'><br/>The remains of inscription, on a smooth rock face projecting from top of a rocky hillock, can be seen under ugly concrete shelter in a small neighbourhood park in East of Kailash, near ISKON temple on Raja Dhirsan Marg. It was discovered in 1966 and is an important part of Delhi’s history & Heritage.
+The edict itself does little more than emphasise the importance of a Buddhist way of life. ",
+      "Location":[28.558271,77.256843]
+
+        }
   		},
 
   "b":{

@@ -15,14 +15,7 @@
     	"Name":"Red Fort Complex",
       "Description":"This is regarded as one of the most impressive Delhi World Heritage Sites and was built by Shah Jahan, the famous Mughal ruler between 1638 and 1648. Several Indians refer to it as the Lal Quila. There are several attractions within the Red Fort such as the Diwan-i-Khas and the Diwan-i-Am. The Rang Mahal houses the famous lotus-shaped fountain and the fort is also popular for its gardens, mosque and various halls.",
       "Location":[28.655858,77.241928]
-    		},
-    "d":{
-      "Name":"Ashokan Rock Edict",
-      "Description":"<img src='http://goodearthguides.files.wordpress.com/2010/07/edict2.jpg'><br/>The remains of inscription, on a smooth rock face projecting from top of a rocky hillock, can be seen under ugly concrete shelter in a small neighbourhood park in East of Kailash, near ISKON temple on Raja Dhirsan Marg. It was discovered in 1966 and is an important part of Delhi’s history & Heritage.
-The edict itself does little more than emphasise the importance of a Buddhist way of life. ",
-      "Location":[28.558271,77.256843]
-
-        }
+    		}
   		},
 
   "b":{

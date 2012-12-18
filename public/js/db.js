@@ -8,7 +8,7 @@
     		},
     "b":{
     	"Name":"Humayun Tomb",
-      "Description":"<img src='http://www.ejiusa.com/india_city_details/Humayuns'tomb.jpg'><br/>This tomb was built in 1570 AD by Humayun's wife Haji Begum. What is immensely overwhelming about the tomb, is its brilliant octagonal shape. Some of the interesting features of the massive tomb are the bath chamber, the sand stone mausoleum and a pavilion.",
+      "Description":"<img src='http://images.fanpop.com/images/image_uploads/Humayun---s-Tomb-india-622329_910_1024.jpg'><br/>This tomb was built in 1570 AD by Humayun's wife Haji Begum. What is immensely overwhelming about the tomb, is its brilliant octagonal shape. Some of the interesting features of the massive tomb are the bath chamber, the sand stone mausoleum and a pavilion.",
       "Location":[28.593295,77.250731]
     		},
     "c":{
